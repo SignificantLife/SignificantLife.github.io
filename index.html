@@ -10,13 +10,89 @@
   
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+/* Center */
 .w3-flexbox {
   display: flex;
   justify-content: center;
   align-items: center;
-}  
+}
+
+/* Reset default list styles */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation links */
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Add some padding and a border to the navigation */
+nav {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+/* Dropdown List */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /*  set z-index as 1 */
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
-<body class="w3-light-grey">
+<body class="w3-light-grey">  
+<!-- Nav Container -->
+  <div class="w3-content w3-margin-top" style="max-width: 1400px;">
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0);" class="dropbtn">Academic Projects</a>
+        <div class="dropdown-content">
+          <a href="#projectA">Project A</a>
+          <a href="#projectB">Project B</a>
+          <a href="#projectC">Project C</a>
+        </div>
+      </li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
