@@ -26,6 +26,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   word-wrap: break-word; /* 斷行 */
 }
 
+.img-thesis {
+      display: block; /* 讓圖片成為一個塊級元素 */
+      margin: 0 auto; /* 將左右外邊距設置為auto，實現圖片水平置中 */
+}
+
 /* Reset default list styles */
 nav ul {
   list-style: none;
@@ -165,7 +170,7 @@ footer {
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>System Architecture</b></h5>
-           <img src="/img/systemarchi.png" alt="System Architecture">
+           <img class="img-thesis" src="/img/systemarchi.png" alt="System Architecture">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
           <hr>
         </div>
