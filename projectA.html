@@ -128,6 +128,16 @@ footer {
   height: auto; /* 保持图像比例 */
   margin-right: 10px; /* 在图像之间添加一些水平间距 */
 }
+
+.app-demo-images figure {
+  text-align: center; /* 居中图片和标题 */
+}
+
+.app-demo-images figcaption {
+  margin-top: 5px; /* 添加一些顶部间距 */
+  font-style: italic; /* 可以使用斜体样式 */
+}
+
 </style>
   
 </head>
@@ -202,8 +212,10 @@ footer {
         <div class="w3-container">
           <h5 class="w3-opacity"><b>mHealth Application (Patient Version)</b></h5>
            <div class="app-demo-images">
-            <img src="/demo/signup.png" alt="Sign Up">
-            <!-- Add more <img> tags for additional app demo images -->
+             <figure>
+                <img src="/demo/signup.png" alt="Sign Up">
+                <figcaption>Sign Up</figcaption>
+            </figure>
           </div>
           <hr>
         </div>
