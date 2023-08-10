@@ -1,1 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Smart White Cane Design Integrated with IoT Application</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
+/* Center */
+.w3-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* thesis content */
+ .p-thesis {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  text-align: justify; /* 文字兩側對齊 */
+  word-wrap: break-word; /* 斷行 */
+}
+
+.img-thesis {
+      display: block; /* 讓圖片成為一個塊級元素 */
+      margin: 0 auto; /* 將左右外邊距設置為auto，實現圖片水平置中 */
+      width: 550px; /* Image Width */
+      height: 400px;
+}
+
+/* Reset default list styles */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation links */
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Add some padding and a border to the navigation */
+nav {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+/* Dropdown List */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /*  set z-index as 1 */
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center; /* center items */
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+/* left image */
+.footer-left img {
+  width: 80px; /* Image Width */
+  height: 80px; /* Image Height */
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+/* right image */
+.footer-right img {
+  width: 80px; /* Image Width */
+  height: 80px; /* Image Height */
+  margin-left: 5px; 
+}  
+
+/* demonstration */
+.app-demo-images {
+  display: flex; /* 使用弹性布局，使图像水平排列 */
+  justify-content: space-between; /* 在图像之间留出空间 */
+  align-items: center; /* 在纵向方向上居中对齐图像 */
+}
+
+.app-demo-images img {
+  max-width: 80%; /* 确保图像不会超出其容器 */
+  height: auto; /* 保持图像比例 */
+  margin: 10px; /* 在图像之间添加一些水平间距 */
+}
+
+.app-demo-images figure {
+  align-items: center; /* 在纵向方向上居中对齐图像 */
+  text-align: center; /* 居中图片和标题 */
+}
+
+.app-demo-images figcaption {
+  margin-top: 5px; /* 添加一些顶部间距 */
+  font-style: italic; /* 可以使用斜体样式 */
+}
+
+</style>
+  
+</head>
+<body class="w3-light-grey">
+
+<!-- Nav Container -->
+  <div class="w3-content w3-margin-top" style="max-width: 1400px;">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0);" class="dropbtn">Academic Projects</a>
+        <div class="dropdown-content">
+          <a href="projectA.html">Cloud-Based Mobile Health Apps for Hypertension Management in CKD Patients</a>
+          <a href="projectB.html">Hemodialysis Complications Checker System</a>
+          <a href="projectC.html">A Smart White Cane Design Integrated with IoT Application</a>
+        </div>
+      </li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Right Column -->
+    <div>
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">A Smart White Cane Design Integrated with IoT Application</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Motivation</b></h5>
+          <p class="p-thesis">Hemodialysis stands as a pivotal renal replacement therapy catering to patients afflicted with compromised kidney function. In accordance with statistical data from the year 2018, Taiwan witnessed a notable surge in dialysis patients by 12,346. Remarkably, 90.6% of these individuals underwent hemodialysis treatment. Nonetheless, hemodialysis engenders potential complications, encompassing symptoms such as nausea, vomiting, and headaches. In certain instances, the ramifications can escalate to severe outcomes such as cerebral hemorrhage and cardiac arrest, imperiling the patient's life. The intricate etiology and pathogenesis underlying these complications are multifaceted, entwining factors such as dialysis modality, the patient's baseline health, and pharmaceutical influences.</p>
+          <p class="p-thesis">In order to furnish patients with a comfortable and efficacious hemodialysis experience, healthcare practitioners must acquire a comprehensive grasp of post-dialysis complications that manifest after patients transition back to their homes. This insight is indispensable for tailoring appropriate care and treatment strategies to optimize patient outcomes.</p>
+          <hr>
+        </div>
+         <div class="w3-container">
+          <h5 class="w3-opacity"><b>Objective</b></h5>
+          <p class="p-thesis">The objective of this study is to establish an electronic framework for documenting patient complications, thereby facilitating the creation of comprehensive, detailed, and timely records by patients. This digital approach also offers medical personnel convenient access to these records for subsequent statistical analysis. The research endeavors to realize this objective through the development of a system comprising a mobile application and a dedicated website. The mobile application caters to dialysis patients, enabling them to seamlessly record their experiences, while the website is tailored to meet the needs of medical professionals who require access to these records.</p>
+           <hr>
+         </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>System Architecture</b></h5>
+           <img class="img-thesis" src="/img/systemarchi.png" alt="System Architecture">
+          <p class="p-thesis">The mHealth application's system architecture is designed for secure hypertension management, enabling effective communication and data sharing among patients, medical workers, and administrators. It includes mobile apps for patients and medical workers, and an administrator website, and leverages Firebase services for authentication, database management (Cloud Firestore), storage (Cloud Storage), and serverless computing (Cloud Functions). Agora's real-time communication solutions enable video calling. The architecture provides a comprehensive and scalable platform for streamlined healthcare interactions.</p>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16">Demonstration</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Administrator Website</b></h5>
+          <div class="app-demo-images">
+              <figure>
+                  <img src="/demo/ad_signin.png" alt="Demo">
+                  <figcaption>Figure A.56: Sign In</figcaption>
+              </figure>
+          </div>
+          <div class="app-demo-images">
+              <figure>
+                  <img src="/demo/ad_workerlist.png" alt="Demo">
+                  <figcaption>Figure A.57: Viewing Medical Worker’s Personal Information and Professional Certification Documents</figcaption>
+              </figure>
+          </div>
+          <div class="app-demo-images">
+              <figure>
+                  <img src="/demo/ad_pass.png" alt="Demo">
+                  <figcaption>Figure A.58: Verification of Professional Certification Documents</figcaption>
+              </figure>
+          </div>
+          <div class="app-demo-images">
+              <figure>
+                  <img src="/demo/ad_message.png" alt="Demo">
+                  <figcaption>Figure A.59: Sending Customized Feedback to Medical Worker Users</figcaption>
+              </figure>
+          </div>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <div class="footer-left">
+    <img src="/img/cats.png" alt="Left Image">
+    <p>Profiter du moment présent</p>
+  </div>
+  <div class="footer-right">
+    <p>Powered by GitHub Pages <img src="/img/dogs.png" alt="Right Image"></p>
+  </div>
+</footer>
+
+</body>
+</html>
