@@ -130,8 +130,9 @@ footer {
 }
 
 .app-demo-images figure {
-  max-width: 80%; /* 确保图像不会超出其容器 */
-  height: auto; /* 保持图像比例 */
+ display: flex; /* 使用弹性布局，使图像水平排列 */
+  justify-content: space-between; /* 在图像之间留出空间 */
+  align-items: center; /* 在纵向方向上居中对齐图像 */
   text-align: center; /* 居中图片和标题 */
 }
 
