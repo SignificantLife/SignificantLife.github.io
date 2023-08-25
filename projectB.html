@@ -118,9 +118,10 @@ footer {
 
 /* demonstration */
 .app-demo-images {
-  display: flex; /* 使用弹性布局，使图像水平排列 */
-  justify-content: space-between; /* 在图像之间留出空间 */
-  align-items: center; /* 在纵向方向上居中对齐图像 */
+  display: flex;
+  justify-content: center; /* 水平方向居中 */
+  align-items: center; /* 垂直方向居中 */
+  height: 100vh; /* 设置高度，以确保垂直方向居中在视口中 */
 }
 
 .app-demo-images img {
@@ -427,12 +428,12 @@ footer {
                 </div>
               </div>
           </div>
-           <div class="app-demo-images">
+          <div class="app-demo-images">
               <div style="display: flex;">
                 <div style="flex: 1; padding: 5px;">
                   <figure style="flex: 1; padding: 5px; text-align: center;">
                     <img src="/demo/b_web_home.png" alt="Home Page" style="max-width: 100%; height: auto;">
-                    <figcaption>Login Page</figcaption>
+                    <figcaption>Home Page</figcaption>
                   </figure>
                 </div>
               </div>
