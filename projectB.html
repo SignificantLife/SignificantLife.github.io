@@ -124,21 +124,19 @@ footer {
   height: 100vh; /* 设置高度，以确保垂直方向居中在视口中 */
   max-width: 100%; /* 限制最大宽度为视口宽度 */
   overflow-x: auto; /* 水平滚动 */
-  padding: 10px; /* 添加内边距，避免内容靠近边缘 */
   box-sizing: border-box; /* 确保内边距不会增加元素的尺寸 */
-  white-space: nowrap; /* 防止子元素换行 */
 }
 
 .app-demo-images figure {
-  flex: 0 0 auto; /* 禁止图片容器伸缩 */
-  margin-right: 10px; /* 图片容器之间的间距 */
+  flex: 1 0 auto; /* 禁止图片容器伸缩 */
+  margin: 1px; /* 图片容器之间的间距 */
   text-align: center; /* 居中图片和标题 */
 }
 
 .app-demo-images img {
   max-width: 60%; /* 图片宽度为图片容器宽度的60% */
   height: auto; /* 保持图片比例 */
-  margin: 0; /* 图片之间不添加额外的间距 */
+  margin: 1px; /* 图片之间不添加额外的间距 */
 }
 
 .app-demo-images figcaption {
