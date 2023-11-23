@@ -125,6 +125,15 @@ footer {
   max-width: 100%; /* 限制最大宽度为视口宽度 */
 }
 
+  /* 在小屏幕上调整图像大小 */
+@media screen and (max-width: 600px) {
+  .app-demo-images img {
+    max-width: 100%; /* 修改最大宽度，让图像在小屏幕上填满宽度 */
+    margin: 5px; /* 减小在小屏幕上的间距 */
+  }
+}
+
+
 .app-demo-images img {
   max-width: 80%; /* 确保图像不会超出其容器 */
   height: auto; /* 保持图像比例 */
