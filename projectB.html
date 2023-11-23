@@ -119,6 +119,7 @@ footer {
 /* demonstration */
 .app-demo-images {
   display: flex;
+  flex-wrap: wrap; /* 允许图片换行 */
   justify-content: center; /* 水平方向居中 */
   align-items: center; /* 垂直方向居中 */
   height: 100vh; /* 设置高度，以确保垂直方向居中在视口中 */
@@ -126,7 +127,7 @@ footer {
 }
 
 .app-demo-images img {
-  width: 80%; /* 图片宽度为图片容器宽度的100% */
+  max-width: 80%; 
   height: auto; /* 保持图片比例 */
 }
 
@@ -134,6 +135,7 @@ footer {
   flex: 1 0 200px; /* 设置图片容器的最小宽度为 300px，可根据需要调整 */
   margin: 2px; /* 图片容器之间的间距 */
   text-align: center; /* 居中图片和标题 */
+  justify-content: center; /* 水平方向居中 */
 }
 
 .app-demo-images figcaption {
