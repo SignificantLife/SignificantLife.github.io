@@ -126,13 +126,13 @@ footer {
 }
 
 .app-demo-images img {
-  max-width: 50%; /* 确保图像不会超出其容器 */
-  height: auto; /* 保持图像比例 */
-  margin: 1px; /* 在图像之间添加一些水平间距 */
+  width: 100%; /* 图片宽度为图片容器宽度的100% */
+  height: auto; /* 保持图片比例 */
 }
 
 .app-demo-images figure {
-  align-items: center; /* 在纵向方向上居中对齐图像 */
+  flex: 1 0 300px; /* 设置图片容器的最小宽度为 300px，可根据需要调整 */
+  margin: 10px; /* 图片容器之间的间距 */
   text-align: center; /* 居中图片和标题 */
 }
 
