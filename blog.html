@@ -119,23 +119,25 @@ footer {
 /* demonstration */
 .app-demo-images {
   display: flex;
-  align-items: flex-start; /* 垂直方向顶部对齐 */
+  align-items: flex-start; /* 垂直方向頂部對齊 */
   justify-content: center; /* 水平方向居中 */
-  height: 100vh; /* 设置高度，以确保垂直方向居中在视口中 */
-  max-width: 100%; /* 限制最大宽度为视口宽度 */
-  box-sizing: border-box; /* 确保内边距不会增加元素的尺寸 */
+  height: 100vh; /* 設置高度，保證垂直方向在視口中居中 */
+  max-width: 100%; /* 限制最大寬度為視口寬度 */
+  box-sizing: border-box; /* 確保內邊距不會增加元素的尺寸 */
 }
 
 .app-demo-images figure {
-  width: 200px; /* 统一设置图片容器宽度 */
-  margin: 1px; /* 图片容器之间的间距 */
-  text-align: center; /* 居中图片和标题 */
+  width: 200px; /* 統一設置圖片容器寬度 */
+  margin: 1px; /* 圖片容器之間的間距 */
+  text-align: center; /* 居中圖片和標題 */
+  display: flex; /* 使用 flexbox */
+  flex-direction: column; /* 垂直排列內容 */
 }
 
 .app-demo-images img {
-  width: 100%; /* 图片宽度占满图片容器 */
-  height: auto; /* 保持图片比例 */
-  margin: 1px; /* 图片之间不添加额外的间距 */
+  width: 100%; /* 圖片寬度占滿圖片容器 */
+  height: auto; /* 保持圖片比例 */
+  margin: auto; /* 圖片垂直居中 */
 }
 
 .app-demo-images figcaption {
